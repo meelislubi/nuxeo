@@ -65,6 +65,8 @@ public class XAnnotatedObject {
 
     protected XAnnotatedMember enable;
 
+    protected boolean compatWarnOnMerge;
+
     public XAnnotatedObject(XMap xmap, Class<?> klass, XObject xob) {
         try {
             this.xmap = xmap;
@@ -219,6 +221,20 @@ public class XAnnotatedObject {
      */
     public void setEnable(XAnnotatedMember enable) {
         this.enable = enable;
+    }
+
+    /**
+     * @since TODO
+     */
+    public boolean getCompatWarnOnMerge() {
+        return compatWarnOnMerge;
+    }
+
+    /**
+     * @since TODO
+     */
+    public void setCompatWarnOnMerge(boolean compatWarnOnMerge) {
+        this.compatWarnOnMerge = compatWarnOnMerge;
     }
 
 }
